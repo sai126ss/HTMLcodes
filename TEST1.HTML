@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Handling</title>
+    <script>
+        function getSelectedValue() {
+            var dropdown = document.getElementById("myDropdown");
+            var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+            document.getElementById("result").innerHTML = "Selected Value: " + selectedValue;
+        }
+    </script>
+</head>
+<body>
+
+    <select id="myDropdown">
+        <option value="RolsRoyal">Roles Royal</option>
+        <option value="Benz">Benz</option>
+        <option value="audii">audii</option>
+        <option value="Tata">Tata</option>
+        <option value="MahindraThar">Thar</option>
+    </select>
+    <br><br>
+    <button onclick="getSelectedValue()">Show Selected</button>
+    <p id="result"></p>
+
+</body>
+</html>

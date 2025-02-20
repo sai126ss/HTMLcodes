@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse events Example</title>
+    <script>
+        function handleMouseOver(){
+            document.getElementById("hoverElement").style.backgroundColor="lightblue";
+            document.getElementById("hoverElement").innerHTML="mouse over!";
+
+        }
+
+        function handleMouseOut(){
+            document.getElementById("hoverElement").style.backgroundColor="green";
+            document.getElementById("hoverElement").innerHTML="Hover Over ME!!";
+
+        }
+
+        function handleClick(){
+            alert("you clicked the box!");
+        }
+    </script>
+</head>
+<body>
+    <h2> Mouse Events Example</h2>
+    <div id="hoverElement"
+    style="width: 200px; height: 100px; background-color: pink; text-align: center;line-height: 100px;shape-image-threshold: initial;"
+    onmouseover="handleMouseOver()"
+    onMouseout="handleMouseOut()"
+    onclick="handleClick()">
+    Hover over me!!
+</div>
+</body>
+</html>
